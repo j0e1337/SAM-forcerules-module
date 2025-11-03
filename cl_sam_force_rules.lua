@@ -24,7 +24,7 @@ net.Receive("SAM.ForceRules", function()
     btnDisconnect:Dock(BOTTOM)
     btnDisconnect:SetTall(40)
     btnDisconnect:SetText("Server verlassen")
-    btnDisconnect:SetFont("onyx.Hud.Big")
+    btnDisconnect:SetFont("DermaLarge")
     btnDisconnect:SetTextColor(Color(255, 255, 255))
     btnDisconnect.Paint = function(self, w, h)
         surface.SetDrawColor(180, 50, 50)
@@ -51,5 +51,6 @@ net.Receive("SAM.ForceRules", function()
         end
     end)
 end)
+
 
 
