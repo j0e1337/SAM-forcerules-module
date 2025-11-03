@@ -17,7 +17,7 @@ net.Receive("SAM.ForceRules", function()
 
     local html = vgui.Create("DHTML", container)
     html:Dock(FILL)
-    html:OpenURL("https://chronosgaming.cc/cms/darkrp%20wiki")
+    html:OpenURL("https://example.com/")
 
     local btnDisconnect = vgui.Create("DButton", container)
     btnDisconnect:Dock(BOTTOM)
@@ -49,3 +49,4 @@ net.Receive("SAM.ForceRules", function()
         end
     end)
 end)
+
