@@ -3,7 +3,6 @@ if SAM_LOADED then return end
 
 if SERVER then
     AddCSLuaFile("autorun/client/cl_sam_force_rules.lua")
-
     util.AddNetworkString("SAM.ForceRules")
     util.AddNetworkString("SAM.ForceRulesEnd")
 
@@ -20,7 +19,6 @@ if SERVER then
     end
 
     sam.command.set_category("Rules")
-
     sam.command.new("forcerules")
         :SetPermission("forcerules", "admin")
         :Help("Freeze a player and force them to read the rules for a set amount of time (in seconds).")
@@ -54,5 +52,5 @@ if SERVER then
             end)
         end)
     :End()
-
 end
+
